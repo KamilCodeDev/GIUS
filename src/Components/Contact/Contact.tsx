@@ -4,7 +4,7 @@ import img13 from "../../img/img13.png"
 import img14 from "../../img/img14.png"
 import img15 from "../../img/img15.png"
 import img16 from "../../img/img16.png"
-import img17 from "../../img/img17.png"
+
 const Contact = () => {
     return (
         <div className={styles.container}>

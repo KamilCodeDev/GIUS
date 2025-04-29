@@ -58,8 +58,9 @@ const Section = () => {
                     <button>Подробнее</button>
                 </div>
 
-                <div className={styles.image}>
-                    <img src={img20}  />
+                <div className={styles.imag}>
+                    <img src={img20} 
+                    />
                 </div>
 
 
