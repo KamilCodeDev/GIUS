@@ -16,10 +16,10 @@
     gap: 2rem;
     height: 400px;
     margin-top: 25px;
-  
-    @media (min-width: 768px) {
+     @media (min-width: 768px) {
       flex-direction: row;
     }
+
   }
   
   .content {
@@ -53,6 +53,42 @@
       }
     }
   }
+  .content_id{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1.5rem;
+    text-align: end;
+
+  
+    h2 {
+      font-size: 36px;
+      font-weight: bold;
+    }
+  
+    p {
+      font-size: 20px;
+      color: #555;
+    }
+  
+    button {
+      width: fit-content;
+      padding: 0.75rem 2rem;
+      background-color: #000;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #333;
+      }
+    }
+
+  }
 
   
   .image {
@@ -63,3 +99,36 @@
     }
   }
   
+  @media (max-width: 768px) {
+    .supportCard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      height: 470px;
+      h2{
+          font-size: 22px;
+      }
+    }
+  
+    .image,
+    .imag {
+      order: -1; // Переносим изображение выше текста (если нужно)
+      display: flex;
+      justify-content: center;
+    }
+  
+    .content,
+    .content_id {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    img {
+      max-width: 250px;
+      height: auto;
+    }
+  }

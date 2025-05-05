@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import styles from "./Contact.module.scss"
 import img12 from "../../img/img12.png"
 import img13 from "../../img/img13.png"
@@ -6,6 +7,9 @@ import img15 from "../../img/img15.png"
 import img16 from "../../img/img16.png"
 
 const Contact = () => {
+    const [activeForm, setActiveForm] = useState<'user' | 'partner'>('user');
+
+    const isUser = activeForm === 'user';
     return (
         <div className={styles.container}>
             <div className={styles.card}>
@@ -35,11 +39,52 @@ const Contact = () => {
 
                 </div>
                 <div className={styles.right}>
+                    <div className={styles.toggleWrapper}>
+                        <button
+                            className={`${styles.toggleButton} ${isUser ? styles.active : ''}`}
+                            onClick={() => setActiveForm('user')}
+                            type="button"
+                        >
+                            Написать нам
+                        </button>
+                        <button
+                            className={`${styles.toggleButton} ${!isUser ? styles.active : ''}`}
+                            onClick={() => setActiveForm('partner')}
+                            type="button"
+                        >
+                            Заявка на партнёрство
+                        </button>
+                    </div>
+
+
                     <form className={styles.form}>
-                        <div className={styles.field}><input type="text" placeholder="Полное имя" required /></div>
-                        <div className={styles.field}><input type="email" placeholder="Email" required /></div>
-                        <div className={styles.field}><input type="tel" placeholder="Номер телефона" required /></div>
-                        <div className={styles.field}><textarea placeholder="Сообщение" rows={4}></textarea></div>
+                        <div className={styles.field}>
+                            <input
+                                type="text"
+                                placeholder={isUser ? 'Полное имя' : 'Название компании'}
+                                required
+                            />
+                        </div>
+                        <div className={styles.field}>
+                            <input
+                                type="email"
+                                placeholder={isUser ? 'Email' : 'Контактный email'}
+                                required
+                            />
+                        </div>
+                        <div className={styles.field}>
+                            <input
+                                type="tel"
+                                placeholder={isUser ? 'Номер телефона' : 'Рабочий телефон'}
+                                required
+                            />
+                        </div>
+                        <div className={styles.field}>
+                            <textarea
+                                placeholder={isUser ? 'Сообщение' : 'Опишите предложение'}
+                                rows={4}
+                            ></textarea>
+                        </div>
                         <button type="submit">Отправить</button>
                     </form>
                 </div>

@@ -10,7 +10,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 40px 40px;
+        padding: 40px 60px;
     }
     h1{
         color: white;
@@ -92,5 +92,33 @@
   
   button:hover {
     background: #333;
+  }
+  
+  .toggleWrapper {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    width: fit-content;
+    margin-bottom: 24px;
+    border: 1px solid #ccc;
+  }
+  
+  .toggleButton {
+    background: #e0e0e0;
+    color: #555;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  
+    &:not(:last-child) {
+      border-right: 1px solid #ccc;
+    }
+  }
+  
+  .active {
+    background: #111;
+    color: white;
   }
   

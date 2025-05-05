@@ -20,7 +20,17 @@
         cursor: pointer;
         padding: 20px 80px;
         }
+        @media screen and (max-width: 768px) {
+            h1{
+                font-size: 35px;
+            }
+            button{
+                padding: 10px 40px;
+                font-size: 15px;
+            }
+          }
 }
+
 .back{
     height: 80vh;
 }

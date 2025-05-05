@@ -1,0 +1,43 @@
+.carouselWrapper {
+    overflow-x: auto;
+    padding: 20px 0;
+  }
+  
+  .carousel {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    background: #121212;
+    color: #fff;
+    padding: 45px 20px;
+    border-radius: 12px;
+    position: relative;
+    font-weight: 600;
+    height: 305px;
+    width: 222px;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 32px;
+    height: 32px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+ 
+  

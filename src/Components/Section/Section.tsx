@@ -37,7 +37,7 @@ const Section = () => {
                         src={img4}
                     />
                 </div>
-                <div className={styles.content}>
+                <div className={styles.content_id}>
                     <h2>ID SYSTEM</h2>
                     <p>Умная цифровая платформа для автоматизации подбора и верификации кандидатов</p>
                     <button>Подробнее</button>
@@ -78,7 +78,7 @@ const Section = () => {
                 </div>
                 
 
-                <div className={styles.content}>
+                <div className={styles.content_id}>
                     <h2>GWS — GIUS WORK SUPPORT</h2>
                     <p>Официальный офис поддержки словацких работодателей в Центральной Азии</p>
                     <button>Подробнее</button>
