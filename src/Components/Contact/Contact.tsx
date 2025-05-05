@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from "./Contact.module.scss"
 import img12 from "../../img/img12.png"
 import img13 from "../../img/img13.png"
