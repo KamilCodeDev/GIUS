@@ -17,9 +17,9 @@ const Navbar = () => {
       </div>
 
       <ul className={`${styles.menu} ${menuOpen ? styles.open : ""}`}>
-        <Link to="/">Главная</Link>
-        <Link to="/about">О нас</Link>
-        <Link to="/sistem">Услуги</Link>
+        <Link to="/" style={{ color: 'black' }}>Главная</Link>
+        <Link to="/about" style={{ color: 'black' }}>О нас</Link>
+        <Link to="/sistem" style={{ color: 'black' }}>Услуги</Link>
         <li>Контакты</li>
       </ul>
     </div>

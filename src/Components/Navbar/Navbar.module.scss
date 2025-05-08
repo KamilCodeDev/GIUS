@@ -3,9 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-
     transition: background-color 0.3s ease;
-  
     @media screen and (max-width: 768px) {
       flex-wrap: wrap;
     }
@@ -14,23 +12,19 @@
   .active {
     background-color: black;
   
-    li {
-      color: white;
-    }
-  
     .burger span {
       background-color: white;
+
     }
   }
   
-  .menu {
+  .menu { 
     display: flex;
     gap: 20px;
     list-style: none;
   
     li {
-      color: white;
-      cursor: pointer;
+      color: white !important;
     }
   
     @media screen and (max-width: 768px) {
