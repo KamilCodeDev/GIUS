@@ -4,6 +4,7 @@ import img2 from "../../img/img2.png"
 import img4 from "../../img/img4.png"
 import img5 from "../../img/img5.png"
 import img20 from "../../img/img20.png"
+import { Link } from "react-router-dom";
 const Section = () => {
     return (
         <div className={styles.container}>
@@ -17,8 +18,8 @@ const Section = () => {
                 <div className={styles.content}>
                     <h2>GWS — GIUS WORK SUPPORT</h2>
                     <p>Официальный офис поддержки словацких работодателей в Центральной Азии</p>
-                    <button>Подробнее</button>
-                </div>
+                    <Link to={"/about"} className={styles.button}>Подробнее</Link>
+                </div> 
 
                 <div className={styles.image}>
                     <img
@@ -40,7 +41,7 @@ const Section = () => {
                 <div className={styles.content_id}>
                     <h2>ID SYSTEM</h2>
                     <p>Умная цифровая платформа для автоматизации подбора и верификации кандидатов</p>
-                    <button>Подробнее</button>
+                    <Link to={"/sistem"} className={styles.button}>Подробнее</Link>
                 </div>
 
 

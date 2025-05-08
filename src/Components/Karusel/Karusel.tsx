@@ -3,6 +3,7 @@ import styles from "./Karusel.module.scss";
 import img24 from "../../img/img24.png";
 import img25 from "../../img/img25.png";
 import img26 from "../../img/img26.png";
+import img40 from "../../img/img40.png"
 
 
 const cards = [
@@ -23,7 +24,12 @@ const cards = [
         image: img26,
         text: "Полный цикл: от заявки до выхода кандидата на работу",
     },
-    
+    {
+        id: 3,
+        image: img40,
+        text: "Полный цикл: от заявки до выхода кандидата на работу",
+    },
+
 
 
 ];
@@ -50,13 +56,17 @@ const Karusel = () => {
 
     return (
         <div className={styles.container}>
+            <h1 className={styles.title}>Что мыпредлагаем
+                европейским работодателям?</h1>
             <div className={styles.carousel} ref={scrollRef}>
+
                 {cards.map((card) => (
                     <div
                         key={card.id}
                         className={styles.card}
                         style={{ backgroundImage: `url(${card.image})` }}
                     >
+
                         <div className={styles.index}>{card.id + 1}</div>
                         <p className={styles.text}>{card.text}</p>
                     </div>

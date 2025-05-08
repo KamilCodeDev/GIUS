@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./Navbar.module.scss";
 import logo from "../../img/logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,9 +17,9 @@ const Navbar = () => {
       </div>
 
       <ul className={`${styles.menu} ${menuOpen ? styles.open : ""}`}>
-        <li>Главная</li>
-        <li>О нас</li>
-        <li>Услуги</li>
+        <Link to="/">Главная</Link>
+        <Link to="/about">О нас</Link>
+        <Link to="/sistem">Услуги</Link>
         <li>Контакты</li>
       </ul>
     </div>

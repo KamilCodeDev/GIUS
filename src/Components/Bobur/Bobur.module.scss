@@ -1,0 +1,15 @@
+.card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1248px;
+    height: 500px;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.cards{
+    max-width: 700px;
+    padding: 20px 130px;
+}

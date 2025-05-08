@@ -1,0 +1,11 @@
+.app{
+   background: url("../../img/img1.png") no-repeat center center; 
+   height: 100vh;
+   background-size: cover;
+}
+@media screen and (max-width: 768px) {
+    .app{
+        width: 100%;
+        height: auto;
+    }
+  }

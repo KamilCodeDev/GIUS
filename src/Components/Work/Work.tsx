@@ -11,6 +11,7 @@ const steps = [
 const Work = () => {
   return (
     <div className={styles.carouselWrapper}>
+      <h1>Как это работает?</h1>
       <div className={styles.carousel}>
         {steps.map((text, index) => (
           <div key={index} className={styles.card}>
